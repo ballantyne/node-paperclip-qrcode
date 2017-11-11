@@ -1,0 +1,16 @@
+{
+  "name": "node-paperclip-qrcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Scott Ballantyne",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.2.28",
+    "klass": "^1.4.1",
+    "qrcode-reader": "^1.0.4"
+  }
+}
