@@ -8,9 +8,16 @@
   },
   "author": "Scott Ballantyne",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ballantyne/node-paperclip-qrcode.git"
+  },
   "dependencies": {
     "jimp": "^0.2.28",
     "klass": "^1.4.1",
     "qrcode-reader": "^1.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
   }
 }
