@@ -22,8 +22,8 @@ module.exports    = klass(function(paperclip) {
       var qr = new QrCode();
       qr.callback = function(err, value) {
         var object = {};
-        if (value) {
-          object[attribute] = value;
+        if (value && value.result) {
+          object[attribute] = value.result;
         }
 
         if (next) {
