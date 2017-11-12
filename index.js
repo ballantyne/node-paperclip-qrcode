@@ -8,6 +8,7 @@ module.exports    = klass(function(paperclip) {
 
   perform: function(options, next) {
     var self      = this;
+    console.log(self.paperclip.file())
     var attribute;
     if (options.attribute) {
       attribute   = options.attribute;
@@ -21,7 +22,7 @@ module.exports    = klass(function(paperclip) {
       var qr = new QrCode();
       qr.callback = function(err, value) {
         var object = {};
-        if (result) {
+        if (value) {
           object[attribute] = value;
         }
 
