@@ -1,5 +1,4 @@
 node-paperclip-qrcode
-
 =========
 
 This is a plugin that works with node-paperclip.  It reads images and recognizes qrcodes and extracts and saves the text using qrcode-reader.   
