@@ -7,14 +7,14 @@ module.exports    = klass(function(paperclip) {
 }).methods({
 
   perform: function(options, next) {
-    var self      = this.paperclip;
+    var self      = this;
     var attribute;
     if (options.attribute) {
       attribute   = options.attribute;
     } else {
       attribute   = 'qrcode';
     }
-    Jimp.read(self.file.buffer, function(err, image) {
+    Jimp.read(self.paperclip.file().file.buffer, function(err, image) {
       if (err) {
         console.error(err);
       }
